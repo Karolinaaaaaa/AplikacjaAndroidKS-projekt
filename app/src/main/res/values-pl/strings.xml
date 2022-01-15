@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikacja</string>
+    <string name="money">Ile pieniędzy chcesz odłożyć?</string>
+    <string name="toastCommunicat">Wartość nie może być równa 0 i nie może być ujemna</string>
+    <string name="next">Dalej</string>
+    <string name="back">Cofnij</string>
+    <string name="wlecome">Witaj w aplikacji!</string>
+    <string name="toastWelcome">Jesteś w aplikacji oszczędzania pieniędzy!</string>
+    <string name="savedMoney">"Zaoszczędziłeś aktualnie: "</string>
+</resources>

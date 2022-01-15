@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="money">How much money do you want to save?</string>
+    <string name="toastCommunicat">The value cannot be 0 and cannot be negative</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="wlecome">Welcome to application!</string>
+    <string name="toastWelcome">You are in the money saving app!</string>
+    <string name="savedMoney">You have saved currently:</string>
+</resources>
