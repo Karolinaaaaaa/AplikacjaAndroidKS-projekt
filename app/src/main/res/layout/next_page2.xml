@@ -9,16 +9,17 @@
         android:id="@+id/textViewSaved"
         android:layout_width="253dp"
         android:layout_height="73dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/savedMoney"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/putMoney"
         android:textColor="#3D1045"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -28,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -39,11 +40,80 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="179dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="127dp"
+        android:layout_width="185dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="112dp"
+        android:gravity="center"
         android:inputType="number"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSaved" />
+
+    <TextView
+        android:id="@+id/suma"
+        android:layout_width="283dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="@string/savedMoney"
+        android:textColor="#B60D47"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holdM" />
+
+    <TextView
+        android:id="@+id/holdM"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="112dp"
+        android:gravity="center"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="259dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="@string/holdMoney"
+        android:textColor="#54225C"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/sumTwo"
+        android:layout_width="182dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="112dp"
+        android:gravity="center"
+        android:textColor="#37BF3C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suma" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#702323"
+        android:onClick="addNumber"
+        android:text="@string/button_chceck"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumTwo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

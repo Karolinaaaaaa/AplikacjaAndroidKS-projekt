@@ -1,8 +1,6 @@
 package com.example.aplikacjaandroidks;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -13,10 +11,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class NextPage extends AppCompatActivity {
+    public static final String EXTRA_NUMBER = "com.example.application.example.EXTRA_NUMBER";
+    public static final String EXTRA_NUMBER2 = "com.example.application.example.EXTRA_NUMBER2";
+
     Button buttonNext;
     Button buttonBack;
     EditText editTextNumber;
-    String txt;
+    EditText editTextNumber2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +25,8 @@ public class NextPage extends AppCompatActivity {
 
          buttonNext = (Button) findViewById(R.id.button2);
          buttonBack = (Button) findViewById(R.id.button3);
+         editTextNumber2 = (EditText) findViewById(R.id.editTextNumber2);
          editTextNumber = (EditText) findViewById(R.id.editTextNumber);
-        editTextNumber.setText(txt);
-        String number = editTextNumber.getText().toString();
 
 
         editTextNumber.setOnTouchListener(new View.OnTouchListener() {
@@ -53,24 +53,16 @@ public class NextPage extends AppCompatActivity {
             }
         });
     }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("dane", editTextNumber.getText().toString());
-        editor.commit();
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
-        txt = sharedPref.getString("dane", "");
-    }
     public void newActivity()
     {
         Intent i = new Intent(this, NextPage2.class);
-        i.putExtra("dane", txt);
+        editTextNumber = (EditText) findViewById(R.id.editTextNumber);
+        int number = Integer.parseInt(editTextNumber.getText().toString());
+
+        editTextNumber2 = (EditText) findViewById(R.id.editTextNumber2);
+        int number2 = Integer.parseInt(editTextNumber2.getText().toString());
+        i.putExtra(EXTRA_NUMBER2, number2);
+        i.putExtra(EXTRA_NUMBER, number);
         startActivity(i);
     }
     public void oldActivity()

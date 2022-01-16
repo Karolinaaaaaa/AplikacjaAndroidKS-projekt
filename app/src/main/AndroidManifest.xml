@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikacjaAndroidKS">
         <activity
+            android:name=".NextPage3"
+            android:exported="false" />
+        <activity
             android:name=".NextPage2"
+            android:parentActivityName=".NextPage"
             android:exported="false" />
         <activity
             android:name=".NextPage"

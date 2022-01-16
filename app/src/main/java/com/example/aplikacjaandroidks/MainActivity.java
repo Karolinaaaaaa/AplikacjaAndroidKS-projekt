@@ -3,20 +3,20 @@ package com.example.aplikacjaandroidks;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.time.Instant;
 
 public class MainActivity extends AppCompatActivity {
 
 Button button_next;
 TextView welcome;
+ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,11 @@ TextView welcome;
 
         button_next = (Button) findViewById(R.id.button);
         welcome = (TextView) findViewById(R.id.aplikacja_powitanie);
+        imageView = (ImageView) findViewById(R.id.imageView);
 
         button_next.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-   // welcome.setTextColor(Color.MAGENTA);
-       // button_next.setText("New Color!");
         newActivity();
     }
 });

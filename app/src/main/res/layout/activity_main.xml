@@ -10,17 +10,17 @@
         android:id="@+id/aplikacja_powitanie"
         android:layout_width="272dp"
         android:layout_height="65dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:text="@string/wlecome"
         android:textColor="#893C9E"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <Button
         android:id="@+id/button"
@@ -28,10 +28,25 @@
         android:layout_height="99dp"
         android:layout_marginStart="67dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="73dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#9C27B0"
         android:text="@string/next"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aplikacja_powitanie"
+        app:srcCompat="@drawable/money" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

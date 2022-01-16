@@ -8,4 +8,10 @@
     <string name="wlecome">Witaj w aplikacji!</string>
     <string name="toastWelcome">Jesteś w aplikacji oszczędzania pieniędzy!</string>
     <string name="savedMoney">"Zaoszczędziłeś aktualnie: "</string>
+    <string name="currentMoney">Ile pieniędzy masz aktualnie zaoszczędzonych?</string>
+    <string name="putMoney">"Odłożyłeś pieniędzy: "</string>
+    <string name="holdMoney">"Miałeś odłożonych pieniędzy: "</string>
+    <string name="button_chceck">Sprawdź</string>
+    <string name="congratulations">Gratulacje!</string>
+    <string name="toastEnd">Dziękuję. Aplikacja stworzona przez Karolina Stopa.</string>
 </resources>

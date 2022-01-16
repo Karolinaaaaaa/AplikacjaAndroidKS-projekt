@@ -7,4 +7,10 @@
     <string name="wlecome">Welcome to application!</string>
     <string name="toastWelcome">You are in the money saving app!</string>
     <string name="savedMoney">You have saved currently:</string>
+    <string name="currentMoney">How much money you currently have saved?</string>
+    <string name="putMoney">You put down your money:</string>
+    <string name="holdMoney">You had money set aside:</string>
+    <string name="button_chceck">Check</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="toastEnd">Thank you. Application create by Karolina Stopa.</string>
 </resources>
