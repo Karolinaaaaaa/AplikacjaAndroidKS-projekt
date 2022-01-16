@@ -12,5 +12,5 @@
     <string name="holdMoney">You had money set aside:</string>
     <string name="button_chceck">Check</string>
     <string name="congratulations">Congratulations!</string>
-    <string name="toastEnd">Thank you. Application create by Karolina Stopa.</string>
+    <string name="toastEnd">Thank you. Application created by Karolina Stopa.</string>
 </resources>
